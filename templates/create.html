@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Chatty | Workspace</title>
+    <meta name="description" content="Chatty workspace" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Chatty | Home" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mlchat.pythonanywhere.com/" />
+    <meta
+      property="og:image"
+      content="https://mlchat.pythonanywhere.com/static/png/favicon.png"
+    />
+    <link rel="icon" href="../static/png/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="../static/css/globals.css" />
+    <link rel="stylesheet" href="../static/css/create.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="head">
+        <img class="intents-head" src="/static/png/intents.png" />
+      </div>
+      <div class="overlap">
+        <a href="/">
+          <div class="go-back">
+            <img class="arrow" src="/static/svg/arrow-1.svg" />
+            <div class="rectangle">Go Back</div>
+          </div>
+        </a>
+        <div class="intents" id="intents">
+          <div class="intent" id="intent1">
+            <div class="overlap-header">
+              <div class="text">Intent 1</div>
+            </div>
+            <div class="intent-row">
+              <div class="intent-label">Tag</div>
+              <input
+                type="text"
+                class="text-wrapper"
+                name="tag1"
+                id="tag1"
+                placeholder="Enter the tag.."
+              />
+            </div>
+            <div class="intent-row">
+              <div class="intent-label">Patterns</div>
+              <input
+                type="text"
+                class="text-wrapper"
+                name="pattern1"
+                id="pattern1"
+                placeholder="Separate patterns by the comma"
+              />
+            </div>
+            <div class="intent-row">
+              <div class="intent-label">Responses</div>
+              <input
+                type="text"
+                class="text-wrapper"
+                name="response1"
+                id="response1"
+                placeholder="Separate patterns by the comma"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="buttons">
+          <div class="button-wrapper">
+            <button
+              class="button"
+              onclick="addIntent('intent1')"
+              id="addIntent"
+            >
+              New Intent
+            </button>
+            <button
+              class="button"
+              onclick="deleteIntent('intent1')"
+              id="deleteIntent"
+            >
+              Clear Intent
+            </button>
+            <button class="button" onclick="buildModel()">Build Model</button>
+            <button
+              class="button disabled"
+              style="margin-left: 37%; margin-top: 30px"
+              id="downloadModel"
+              onclick="download('./static/models/data.pth')"
+            >
+              Download Model
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/static/js/create.js"></script>
+  </body>
+</html>

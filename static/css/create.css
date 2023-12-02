@@ -1,0 +1,264 @@
+/* ################## Create CSS ################### */
+
+.desktop {
+  background-color: #26355d;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+  height: 100%;
+  width: 100%;
+}
+
+.desktop .head {
+  padding-top: 22px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.desktop .intents-head {
+  width: 225px;
+  height: 60px;
+}
+
+.desktop .overlap {
+  /* position: absolute; */
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  margin-top: 25px;
+  margin-left: 19.5%;
+  /* top: 286px;
+    left: 188px; */
+  background-color: #2f5e61;
+  border-radius: 37px;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040, 0px 4px 4px #00000040,
+    0px 4px 4px #00000040, 0px 4px 4px #00000040, 0px 4px 4px #00000040;
+}
+
+/* ####### Go Back Button ######## */
+.desktop .go-back {
+  width: auto;
+  display: flex;
+  cursor: pointer;
+}
+
+.desktop .go-back .arrow {
+  /* position: absolute; */
+  width: fit-content;
+  height: auto;
+  background-color: #d9d9d9;
+  padding-left: 3px;
+  border-radius: 8px 0px 0px 8px;
+  /* top: 44px;
+  left: 16px; */
+}
+
+.desktop .go-back .rectangle {
+  width: fit-content;
+  /* height: 22px; */
+  /* top: 0; */
+  border-radius: 0px 8px 8px 0px;
+  /* position: absolute; */
+  /* left: 0; */
+  background-color: #d9d9d9;
+  font-family: "Jua", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 12.1px;
+  letter-spacing: 0;
+  line-height: normal;
+  padding: 5px;
+}
+/* ####### Go Back Button ######## */
+
+/* ####### Overlap Header ######## */
+.desktop .overlap-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.desktop .overlap-header .text {
+  width: fit-content;
+  height: auto;
+  padding: 15px 45px 15px 45px;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: #000000;
+  box-shadow: 0px 4px 4px #00000040;
+  background-color: #d9d9d9;
+  text-shadow: 0px 4px 4px #00000040;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Jua", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 20.5px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+}
+/* ####### Overlap Header ######## */
+
+.desktop .intents {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* ####### Intent ######## */
+.intent {
+  margin-bottom: 50px;
+}
+
+hr {
+  width: 100%;
+}
+
+.desktop .intent-row {
+  /* position: absolute; */
+  width: fit-content;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 17.5%;
+  font-size: 32px;
+  /* top: 0;
+  left: 0; */
+}
+
+.desktop .intent-label {
+  /* position: absolute; */
+  width: fit-content;
+  height: auto;
+  /* top: -1px;
+    left: -1px; */
+  text-shadow: 0px 4px 4px #00000040;
+  -webkit-text-stroke: 1px #000000;
+  font-family: "Jua", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 32px;
+  letter-spacing: 0;
+  line-height: normal;
+  font-weight: 750;
+}
+
+.desktop .text-wrapper {
+  width: 577px;
+  height: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 6.23px;
+  border: 0.44px solid;
+  border-color: #000000;
+  font-family: "Capriola", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.desktop .text-wrapper::placeholder,
+.desktop .text-wrapper::-webkit-input-placeholder {
+  font-family: "Capriola", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+/* ####### Intent ######## */
+
+/* ####### Buttons ######## */
+.desktop .buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.desktop .buttons .button-wrapper {
+  width: 700px;
+  height: auto;
+}
+
+.desktop .buttons .button-wrapper .button {
+  cursor: pointer;
+  margin-left: 4%;
+  width: 200px;
+  height: 35px;
+  border-radius: 14px;
+  border: 1px solid;
+  background: rgb(255, 145.38, 44.2);
+  border-color: #000000;
+
+  /* padding: 15px 0px 15px  0px; */
+  font-family: "Jua", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 21.1px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.desktop .buttons .button-wrapper .button:hover {
+  box-shadow: 0px 4px 4px #00000040, 0px 4px 4px #00000040,
+    0px 12px 15px -4px #00000040;
+  border-color: #ffffff;
+}
+
+.desktop .buttons .button-wrapper .button:active {
+  background-color: #ffffff;
+}
+
+.disabled,
+.disabled:hover .disabled:active {
+  background: rgb(176, 100, 28) !important;
+  border-color: #000000 !important;
+  box-shadow: none !important;
+}
+
+.animeButton {
+  position: relative;
+  overflow: hidden;
+  /* height: fit-content;
+  width: auto; */
+}
+
+.animeButton:before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 20px;
+  background: #f3f3f3;
+  box-shadow: 0 0 10px #fff;
+  filter: blur(1px);
+  opacity: 0.9;
+  top: -30px;
+  /* transition: 0.7s; */
+  animation: building 0.7s linear infinite;
+  transform: rotate(-20deg) translate(-45px, -20px);
+  /* transform: rotate(-20deg) translate(205px, 110px); */
+}
+
+/* .animeButton:hover:before {
+  transform: rotate(-20deg) translate(190px, 60px);
+} */
+
+@keyframes building {
+  0% {
+    transform: rotate(-20deg) translate(-45px, -20px);
+  }
+  100% {
+    transform: rotate(-20deg) translate(190px, 60px);
+  }
+}
+/* ####### Buttons ######## */
