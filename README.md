@@ -4,7 +4,7 @@
 
 This repository contains complete code for ChatBotAPI. The ChatBotAPI is the try to achieve personal chatbot training platform, this API could help several small business or small bots to have the power of nlp with having less time in development.
 The model behind the curtains has a a feedforward neural network with three fully connected layers and ReLU activation functions.
-The hyperparameters used for training are:
+### The hyperparameters used for training are:
 1. `batch_size = 8`
 2. `hidden_size = 8`
 3. `output_size = len(tags)` here number of tags is output size
